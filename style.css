@@ -49,12 +49,14 @@ img {
   align-items: center;
   grid-column: inner;
   margin-top: 6rem;
+  gap:2rem;
 }
 .hero_presentation {
   color: white;
   font-weight: 500;
   font-size: 2rem;
-  min-width: 600px;
+  min-width:0;
+  width:100%;
   border-left: 3.5px solid #FF0000;
   padding-left: 1.1rem;
 }
@@ -191,7 +193,7 @@ img {
 .projects_content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 7rem;
+  gap: 1rem;
 }
 .projects_title {
   color: black;
@@ -205,9 +207,10 @@ img {
   display: flex;
   flex-direction: column;
 }
-.project_image, .project2_image {
-  min-width: 400px;
-  min-height: 300px;
+.project_image img{
+    width:100%;
+    height:auto;
+    display:block;
 }
 .project figure, .project2 figure {
   margin: 0;
@@ -276,6 +279,108 @@ img {
 }
 .footer_content {
   color: #FF0000;
+}
+
+.hamburger{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .hero_inner{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        min-height:60vh;
+    }
+
+    .hero_presentation{
+        min-width:0;
+        width:100%;
+        border-left:none;
+        padding-left:0;
+        font-size:1.4rem;
+    }
+
+    .hero{
+        min-height:70vh;
+    }
+
+    .hero_presentation span{
+        font-size:2rem;
+    }
+
+    .hero_photo{
+        max-width:300px;
+    }
+
+    .about_lists{
+        flex-direction:column;
+    }
+
+    .about_item_negative{
+        margin-left:0;
+    }
+
+    .projects_content{
+        grid-template-columns:1fr;
+    }
+
+    .project_image img{
+        width:100%;
+        height:auto;
+    }
+
+    .menu_list{
+        gap:1rem;
+    }
+
+    .menu_link{
+        font-size:16px;
+    }
+
+    .header_inner{
+        padding:0 1rem;
+    }
+
+    .hero_photo{
+        display:none;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .menu{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:black;
+        display:none;
+    }
+
+    .menu.active{
+        display:block;
+    }
+
+    .menu_list{
+        flex-direction:column;
+        align-items:center;
+        padding:2rem 0;
+        gap:1.5rem;
+    }
+
+    .menu_link{
+        font-size:1.2rem;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
