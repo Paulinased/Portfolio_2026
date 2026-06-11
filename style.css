@@ -190,11 +190,13 @@ img {
 .projects_inner {
   grid-column: inner;
 }
-.projects_content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem;
+
+.projects_content{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:1rem;
 }
+
 .projects_title {
   color: black;
   border-bottom: 3px solid #FF0000;
@@ -290,35 +292,58 @@ img {
     cursor:pointer;
 }
 
+html,
+body{
+    overflow-x:hidden;
+}
+
 @media (max-width:768px){
 
-    .hero_inner{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        min-height:60vh;
+    html,
+    body{
+        overflow-x:hidden;
     }
 
-    .hero_presentation{
-        min-width:0;
+    .header .name{
+        font-size:1.2rem;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .menu{
+        display:none !important;
+        position:absolute;
+        top:80px;
+        left:0;
         width:100%;
-        border-left:none;
-        padding-left:0;
-        font-size:1.4rem;
+        background:black;
     }
 
-    .hero{
-        min-height:70vh;
+    .menu.active{
+        display:block !important;
     }
 
-    .hero_presentation span{
-        font-size:2rem;
+    .menu_list{
+        flex-direction:column;
+        align-items:center;
+        padding:2rem 0;
     }
 
     .hero_photo{
-        max-width:300px;
+        display:none;
+    }
+
+    .hero_inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero_presentation{
+        border-left:none;
+        padding-left:0;
+        font-size:1.4rem;
     }
 
     .about_lists{
@@ -333,54 +358,27 @@ img {
         grid-template-columns:1fr;
     }
 
-    .project_image img{
-        width:100%;
-        height:auto;
-    }
-
-    .menu_list{
-        gap:1rem;
-    }
-
-    .menu_link{
-        font-size:16px;
-    }
-
     .header_inner{
-        padding:0 1rem;
-    }
+    padding:0 1rem;
+}
 
-    .hero_photo{
-        display:none;
-    }
+.hero{
+    min-height:auto;
+}
 
-    .hamburger{
-        display:block;
-    }
+.hero_inner{
+    margin-top:100px;
+    padding:2rem 0;
+}
 
-    .menu{
-        position:absolute;
-        top:80px;
-        left:0;
-        width:100%;
-        background:black;
-        display:none;
-    }
+.about_intro{
+    font-size:1.1rem;
+}
 
-    .menu.active{
-        display:block;
-    }
-
-    .menu_list{
-        flex-direction:column;
-        align-items:center;
-        padding:2rem 0;
-        gap:1.5rem;
-    }
-
-    .menu_link{
-        font-size:1.2rem;
-    }
+.about_item_positive,
+.about_item_negative{
+    font-size:1rem;
+}
 }
 
 /*# sourceMappingURL=style.css.map */
