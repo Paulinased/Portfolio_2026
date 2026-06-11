@@ -1,0 +1,67 @@
+.about {
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
+    //padding-top: 4rem;
+
+    &_inner {      
+        grid-column: inner;
+        
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    &_title {
+
+        color: black;
+        border-bottom: 3px solid #FF0000;
+        font-weight: bolder;
+        font-size: 2.7rem;
+        width: 189px;
+    }
+
+    &_intro {
+
+        color: black;
+        font-weight: 500;
+        font-size: 1.3rem;
+
+    }
+
+    &_lists {
+    display: flex;
+    }
+
+    &_item_positive {
+        list-style: none;
+        font-size: 21px;
+        padding: 0.4rem;
+    }
+
+    &_item_negative {
+        list-style: none;
+        font-size: 21px;
+        padding: 0.4rem;
+        margin-left: 4rem;
+    }
+
+    &_icon {
+        max-width: 25px;
+        max-height: 25px;
+        margin-right: 10px;
+        vertical-align: middle; // Centrerar ikonen tillsammans med margin
+        margin-bottom: 8px;
+    }
+
+    &_icon2 {
+        max-width: 18px;
+        max-height: 18px;
+        margin-right: 10px;
+        vertical-align: middle;
+        margin-bottom: 6px;
+    }
+
+}

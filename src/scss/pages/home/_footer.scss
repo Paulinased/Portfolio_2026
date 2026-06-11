@@ -1,0 +1,11 @@
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+
+    &_content {
+        color: #FF0000;
+    }
+}
