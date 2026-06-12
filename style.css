@@ -107,6 +107,10 @@ img {
     border-radius:10px;
 }
 
+.projects_title {
+    white-space: nowrap;
+}
+
 .back-link{
     color:#FF0000;
     text-decoration:none;
@@ -449,9 +453,9 @@ body{
     padding:2rem;
 }
 
-.project-page h1{
-    text-align:center;
-    white-space:nowrap;
+.project-page h1 {
+    text-align: center;
+    white-space: normal;
 }
 
 @media (max-width:768px){
@@ -468,6 +472,20 @@ body{
 
     .header .name{
         font-size:1.2rem;
+    }
+
+    .projects_title {
+        font-size: 2.2rem;
+        white-space: nowrap;
+    }
+
+      .project-page h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .projects_header {
+        width: fit-content;
     }
 
     .hamburger{
