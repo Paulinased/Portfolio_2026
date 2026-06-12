@@ -24,10 +24,20 @@ const projects = [
     description: "Grafisk profil för bowling, restaurang och bar."
 },
 {
-    id: "spice",
-    title: "SPICE of Åhus",
-    image: "Bilder/spice.png",
-    description: "Grafisk profil för restaurang."
+  id: "spice",
+  title: "SPICE of Åhus",
+
+  image: "Bilder/spice.png",
+
+  shortDescription:
+    "Grafisk profil för restaurang.",
+
+  fullDescription:
+    "För Spice of Åhus utvecklades en komplett grafisk profil med logotyp, menyer, visitkort, servetter och marknadsmaterial.",
+
+  gallery: [
+    "Bilder/spice.png"
+  ]
 },
 {
       id: "marie",
@@ -45,33 +55,40 @@ const projects = [
 
 const container = document.getElementById("projectsContainer");
 
-projects.forEach(project => {
+if(container){
 
-    container.innerHTML += `
-    
-    <article class="project">
+    projects.forEach(project => {
 
-        <header class="project_header">
-            <h3 class="project_title">${project.title}</h3>
-        </header>
+        container.innerHTML += `
+        
+        <a href="project.html?id=${project.id}" class="project-link">
 
-        <div class="project_display">
-            <figure class="project_image">
-                <img src="${project.image}" alt="${project.title}">
-            </figure>
-        </div>
+            <article class="project">
 
-        <div class="project_content">
-            <p>${project.description}</p>
-        </div>
+                <header class="project_header">
+                    <h3 class="project_title">${project.title}</h3>
+                </header>
 
-        <footer class="project_footer">
-            <a href="project.html?id=${project.id}" class="project_readmore">
-                Se mer
-            </a>
-        </footer>
+                <div class="project_display">
+                    <figure class="project_image">
+                        <img src="${project.image}" alt="${project.title}">
+                    </figure>
+                </div>
 
-    </article>
-    
-    `;
-});
+                <div class="project_content">
+                    <p>${project.shortDescription || project.description}</p>
+                </div>
+
+                <footer class="project_footer">
+                    <span class="project_readmore">
+                        Se mer →
+                    </span>
+                </footer>
+
+            </article>
+
+        </a>
+        `;
+    });
+
+}
