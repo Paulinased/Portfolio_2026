@@ -7,49 +7,82 @@ const projects = [
 },
 {
     id: "ugglan",
-    title: "Bokförlaget UGGLAN",
+    title: "Skolprojekt: Bokförlaget UGGLAN",
     image: "Bilder/ugglan.png",
-    description: "Grafisk profil och marknadsmaterial för ett fiktivt bokförlag."
+    shortDescription: "Grafisk profil för ett fiktivt bokförlag.",
+    fullDescription: "Grafisk profil och marknadsmaterial för ett fiktivt bokförlag.",
+    gallery: [
+    "Bilder/logotyp.jpg",
+    "Bilder/ugglan.png",
+  ]
 },
 {
     id: "horby",
-    title: "Hörby Kommun",
+    title: "Skolprojekt: Hörby Kommun",
     image: "Bilder/horby.png",
-    description: "Logotypkoncept och grafisk identitet."
+    shortDescription:
+    "Modernisering av Hörby kommuns logotyp",
+    fullDescription:
+    "Ett konceptuellt skolprojekt där Hörby kommuns logotyp moderniserades med fokus på enkelhet, tydlighet och användbarhet i moderna medier. Målet var att bevara den historiska symboliken samtidigt som identiteten fick ett mer samtida uttryck.",
+    gallery: [
+    "Bilder/horby2.png",
+    "Bilder/horby.png",
+  ]
 },
 {
     id: "bowling",
     title: "Åhus Bowling",
     image: "Bilder/bowlingen.png",
-    description: "Grafisk profil för bowling, restaurang och bar."
+    shortDescription:
+    "Grafisk profil för restaurang.",
+    fullDescription:
+    "Projektet omfattade framtagning av logotyp, menyer, banners och affischer för Åhus Bowling. Fokus låg på att skapa en tydlig visuell identitet som stärker restaurangens varumärke och kommunikation.",
+    gallery: [
+    "Bilder/bowlingen-logo.png",
+    "Bilder/bowlingen.png",
+    "Bilder/bowling-meny.png",
+    "Bilder/barnaffisch2.png",
+  ]
 },
 {
   id: "spice",
   title: "SPICE of Åhus",
-
   image: "Bilder/spice.png",
-
   shortDescription:
     "Grafisk profil för restaurang.",
-
   fullDescription:
-    "För Spice of Åhus utvecklades en komplett grafisk profil med logotyp, menyer, visitkort, servetter och marknadsmaterial.",
-
+    "Projektet omfattade framtagning av logotyp, menyer, banners och affischer för Spice of Åhus. Fokus låg på att skapa en tydlig visuell identitet som stärker restaurangens varumärke och kommunikation.",
   gallery: [
-    "Bilder/spice.png"
+    "Bilder/spice-logo.jpg",
+    "Bilder/spice.png",
+    "Bilder/menyspice3.jpg",
+    "Bilder/bannertillspice.jpg",
   ]
 },
 {
-      id: "marie",
-    title: "Illustrationer",
+    id: "marie",
+    title: "Illustrationer - Marie",
     image: "Bilder/marieklar2.jpg",
-    description: "Illustrationer skapade i Adobe Illustrator."
+    shortDescription:
+    "Illustration skapad i Adobe Illustrator",
+    fullDescription:
+    "Illustration skapad i Adobe Illustrator med Low Poly-teknik. Projektet visar arbete med form, färg och geometriska strukturer för att skapa ett modernt visuellt uttryck.",
+    gallery: [
+    "Bilder/marieklar2.jpg"
+  ]
 },
 {
     id: "bjorn",
-    title: "Illustrationer",
+    title: "Illustrationer - Breaking Bad",
     image: "Bilder/björn2.jpg",
-    description: "Illustrationer skapade i Adobe Illustrator."
+    shortDescription:
+    "Illustration skapad i Adobe Illustrator",
+    fullDescription:
+    "Illustration skapad i Adobe Illustrator med Low Poly-teknik. Projektet visar arbete med form, färg och geometriska strukturer för att skapa ett modernt visuellt uttryck.",
+    gallery: [
+    "Bilder/björn2.jpg",
+    "Bilder/björn1.jpg",
+  ]
 }
 ];
 
