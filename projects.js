@@ -3,7 +3,12 @@ const projects = [
     id: "akvariefeber",
     title: "AkvarieFeber",
     image: "Bilder/akvariefeber.png",
-    description: "Grafisk profil och marknadsmaterial för en modern akvariebutik."
+    shortDescription: "Grafisk profil och marknadsmaterial för en modern akvariebutik.",
+    fullDescription: "Ett konceptprojekt där en komplett visuell identitet togs fram för en modern akvariebutik. Målet var att skapa ett enhetligt uttryck som förmedlar kvalitet, kunskap och passion för akvariehobbyn.",
+    gallery: [
+    "Bilder/akvariefeber-1.jpg",
+    "Bilder/akvariefeber-material.png",
+  ]
 },
 {
     id: "ugglan",
@@ -12,7 +17,7 @@ const projects = [
     shortDescription: "Grafisk profil för ett fiktivt bokförlag.",
     fullDescription: "Grafisk profil och marknadsmaterial för ett fiktivt bokförlag.",
     gallery: [
-    "Bilder/logotyp.jpg",
+    "Bilder/logotyp.png",
     "Bilder/ugglan.png",
   ]
 },
@@ -61,7 +66,7 @@ const projects = [
 },
 {
     id: "marie",
-    title: "Illustrationer - Marie",
+    title: "Illustration - Marie",
     image: "Bilder/marieklar2.jpg",
     shortDescription:
     "Illustration skapad i Adobe Illustrator",
@@ -73,7 +78,7 @@ const projects = [
 },
 {
     id: "bjorn",
-    title: "Illustrationer - Breaking Bad",
+    title: "Illustration - Breaking Bad",
     image: "Bilder/björn2.jpg",
     shortDescription:
     "Illustration skapad i Adobe Illustrator",
