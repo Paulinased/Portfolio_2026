@@ -479,13 +479,13 @@ body{
         white-space: nowrap;
     }
 
-      .project-page h1{
+      .project-page h1 {
         font-size: 2rem;
         line-height: 1.2;
     }
 
     .projects_header {
-        width: fit-content;
+        width: fit-content; 
     }
 
     .hamburger{
