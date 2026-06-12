@@ -116,7 +116,7 @@ img {
 @media screen and (min-width: 50rem) {
   .triangle {
     position: relative;
-    height: 20vw;
+    height: 15vw;
     background-color: #F5F5F5;
   }
   .triangle::before {
